@@ -2,11 +2,12 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
-import LoginPage from './components/Customer/LoginSignUp'; // Ensure the correct path
+import LoginPage from './components/Customer/LoginPage'; // Ensure the correct path
 import MembershipPage from './components/Customer/MembershipPage';
 import Footer from './components/Dashboard/Footer'; // Ensure the correct path
 import Navbarr from './components/Dashboard/Navbarr';
-import MomCareApp from './components/MomCareApp';
+import Header from './components/HomePage/Header/Header';
+import MainContent from './components/HomePage/Maincontent/Maincontent';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           <Route path="/" element={
             <>
               <Navbarr />
-              <MomCareApp /> 
+              <Header />
+              <MainContent />
               <Footer /> 
             </>
           }
