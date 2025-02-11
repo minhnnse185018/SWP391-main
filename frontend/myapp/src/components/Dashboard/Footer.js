@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BlogPage from '../Customer/BlogPage/BlogPage';
 
 const FooterWrapper = styled.footer`
   background: var(--background);
@@ -70,7 +71,7 @@ function Footer() {
               <ul>
                 <li><a href="#about">Về chúng tôi</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="blog">Blog</a></li>
               </ul>
             </FooterSection>
             <FooterSection>

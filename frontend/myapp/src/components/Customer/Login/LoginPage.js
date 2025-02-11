@@ -4,15 +4,16 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
-import * as Components from "./Components";
+import * as Components from "../Components";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
+import Header from "../../HomePage/Header/Header";
 
 const PageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f6f5f7;
+  background:rgb(255, 223, 251);
 `;
 
 const GoogleButtonContainer = styled.div`
@@ -57,6 +58,7 @@ function LoginPage({ setIsLoggedIn }) {
   };
 
   return (
+     
     <GoogleOAuthProvider clientId={clientId}>
       <PageContainer>
         <ToastContainer />
